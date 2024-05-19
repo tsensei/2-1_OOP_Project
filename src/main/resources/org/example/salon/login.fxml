@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.salon.HelloController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="270.0" style="-fx-background-color: #4c214d;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="127.0" prefHeight="70.0" prefWidth="184.0" text=" Salon" textFill="WHITE">
+               <font>
+                  <Font name="Waree Bold" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="340.0" style="-fx-background-color: fffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="62.0" layoutY="34.0" prefHeight="70.0" prefWidth="184.0" text="Login">
+               <font>
+                  <Font name="Waree Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="-18.0" layoutY="138.0" prefHeight="70.0" prefWidth="184.0" text="Name">
+               <font>
+                  <Font name="Waree" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="-14.0" layoutY="242.0" prefHeight="70.0" prefWidth="184.0" text="Password">
+               <font>
+                  <Font name="Waree" size="22.0" />
+               </font>
+            </Label>
+            <TextField layoutX="138.0" layoutY="161.0" />
+            <PasswordField layoutX="139.0" layoutY="265.0" />
+            <Button id="submitButton" layoutX="154.0" layoutY="333.0" mnemonicParsing="false" style="-fx-background-color: #abeb34;" text="Submit" />
+            <Button id="exitButton" fx:id="exitButton" layoutX="230.0" layoutY="333.0" mnemonicParsing="false" onAction="#exitButtonAction" style="-fx-background-color: #abeb34;" text="Exit" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
